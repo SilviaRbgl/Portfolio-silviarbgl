@@ -2,10 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+/* :root {
+  --main-colour: #845EC2;
+  --secondary-colour: #00C9A7;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,11 +16,10 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
+      rgb(var(--main-colour))
     )
-    rgb(var(--background-start-rgb));
-}
+    rgb(var(--secondary-colour));
+} */
