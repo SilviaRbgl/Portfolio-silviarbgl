@@ -2,24 +2,59 @@
 @tailwind components;
 @tailwind utilities;
 
-/* :root {
-  --main-colour: #845EC2;
-  --secondary-colour: #00C9A7;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
+/* base styles */
 body {
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--main-colour))
-    )
-    rgb(var(--secondary-colour));
-} */
+  @apply bg-gradient-to-r from-primary to-secondary text-tertiary m-10
+}
+h1, h2 {
+  @apply text-4xl;
+}
+p {
+  @apply text-2xl;
+}
+main {
+  /* @apply max-w-5xl my-12 mx-auto px-8; */
+}
+main > h2 {
+  /* @apply mb-4 pb-2 text-base ; */
+}
+p > a {
+  /* @apply text-primary underline; */
+}
+
+/* nav styles */
+nav {
+  /* @apply
+    pb-4
+    border-b-2 border-gray-200
+    flex items-center gap-5 
+    my-10 mx-auto 
+    max-w-5xl; */
+}
+nav a, nav span {
+  /* @apply text-gray-500; */
+}
+nav a:hover {
+  /* @apply text-black; */
+}
+main nav {
+  /* @apply border-0; */
+}
+
+/* button styles */
+button {
+  /* @apply 
+    px-3 py-2 
+    rounded-sm 
+    flex justify-between items-center gap-2
+    text-sm; */
+}
+button:hover {
+  /* @apply bg-opacity-90; */
+}
+.btn-primary {
+  /* @apply bg-primary text-white; */
+}
+.btn-secondary {
+  /* @apply bg-gray-200 text-gray-900; */
+}

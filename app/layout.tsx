@@ -1,11 +1,11 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Inconsolata } from 'next/font/google'
 import './globals.css'
 
 //components
 import Navbar from './components/Navbar'
 
-const inter = Inter({ subsets: ['latin'] })
+const inconsolata = Inconsolata({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'SilviaRbgl',
@@ -19,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={inconsolata.className}>
         <Navbar />
         {children}</body>
     </html>
