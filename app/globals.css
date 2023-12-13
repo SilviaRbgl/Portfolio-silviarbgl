@@ -13,7 +13,7 @@ p {
   @apply text-2xl;
 }
 main {
-  /* @apply max-w-5xl my-12 mx-auto px-8; */
+  @apply max-w-5xl my-12 mx-auto px-8;
 }
 main > h2 {
   /* @apply mb-4 pb-2 text-base ; */
@@ -33,11 +33,12 @@ nav a, nav span {
   @apply text-tertiary;
 }
 nav a:hover {
-  @apply text-black;
+  @apply text-fourth;
 }
-main nav {
-  @apply border-0;
-}
+ /*fix: Link is not an a 
+nav a:active {
+  @apply text-fourth; 
+} */
 
 /* button styles */
 button {

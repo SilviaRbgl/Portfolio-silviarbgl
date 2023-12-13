@@ -12,6 +12,7 @@ const config: Config = {
         primary: "#c4b5fd", //color: violet300
         secondary: "#5eead4", //color: teal300
         tertiary: "#f1f5f9", //color: slate100
+        fourth: "#64748b", // color: slate: 500
       }
     },
   },
