@@ -75,8 +75,10 @@ button:hover {
   /* color: rgb(162, 0, 255); */
   height: 100%;
   /* gap: .5em; */
-  display: grid;
-  place-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 .card-button {
   text-decoration: none;
@@ -108,8 +110,8 @@ button:hover {
 }
 .card:hover {
   border-color: #f1f5f9;
-  -webkit-box-shadow: 5px 5px 14px 0 rgba(255, 255, 255, 0.877);
-  box-shadow: 5px 5px 14px 0 rgba(255, 255, 255, 0.877);
+  -webkit-box-shadow: 5px 5px 14px 0 rgba(255, 255, 255, 0.5);
+  box-shadow: 5px 5px 14px 0 rgba(255, 255, 255, 0.5);
 }
 .card:hover .card-button {
   -webkit-transform: translate(-50%, 50%);
