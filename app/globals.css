@@ -57,3 +57,63 @@ button:hover {
 .btn-secondary {
   /* @apply bg-gray-200 text-gray-900; */
 }
+
+/* card styles > convertir a Tailwind */ 
+.card {
+  width: 254px;
+  height: 190px;
+  border-radius: 20px;
+  /* background: #f1f5f9; */
+  position: relative;
+  /* padding: 1.8rem; */
+  border: 2px solid #f1f5f9;
+  -webkit-transition: 0.5s ease-out;
+  transition: 0.5s ease-out;
+  overflow: visible;
+}
+.card-details {
+  /* color: rgb(162, 0, 255); */
+  height: 100%;
+  /* gap: .5em; */
+  display: grid;
+  place-content: center;
+}
+.card-button {
+  text-decoration: none;
+  text-align: center;
+  -webkit-transform: translate(-50%, 125%);
+  -ms-transform: translate(-50%, 125%);
+  transform: translate(-50%, 125%);
+  width: 70%;
+  border-radius: 1rem;
+  border: none;
+  background-color: #c4b5fd;
+  color: #fff;
+  font-size: 1rem;
+  padding: .5rem 1rem;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  opacity: 0;
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+  cursor: pointer;
+}
+.text-body {
+  color: rgb(134, 134, 134);
+}
+.text-title {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.card:hover {
+  border-color: #f1f5f9;
+  -webkit-box-shadow: 5px 5px 14px 0 rgba(255, 255, 255, 0.877);
+  box-shadow: 5px 5px 14px 0 rgba(255, 255, 255, 0.877);
+}
+.card:hover .card-button {
+  -webkit-transform: translate(-50%, 50%);
+  -ms-transform: translate(-50%, 50%);
+  transform: translate(-50%, 50%);
+  opacity: 1;
+}
