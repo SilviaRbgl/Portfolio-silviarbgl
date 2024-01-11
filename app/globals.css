@@ -4,9 +4,10 @@
 
 /* base styles */
 body {
-  @apply bg-gradient-to-r from-primary to-secondary text-tertiary m-10
+  @apply bg-gradient-to-r from-primary to-secondary text-tertiary m-10;
 }
-h1, h2 {
+h1,
+h2 {
   @apply text-4xl;
 }
 p {
@@ -24,18 +25,18 @@ p > a {
 
 /* nav styles */
 nav {
-  @apply
-    pb-4
+  @apply pb-4
     border-b-2 border-tertiary
-    flex items-center justify-evenly gap-10
+    flex items-center justify-evenly gap-10;
 }
-nav a, nav span {
+nav a,
+nav span {
   @apply text-tertiary;
 }
 nav a:hover {
   @apply text-fourth;
 }
- /*fix: Link is not an a 
+/*fix: Link is not an a 
 nav a:active {
   @apply text-fourth; 
 } */
@@ -58,22 +59,29 @@ button:hover {
   /* @apply bg-gray-200 text-gray-900; */
 }
 
-/* card styles > convertir a Tailwind */ 
+/* card styles > convertir a Tailwind */
 .cards {
-  @apply flex flex-col flex-nowrap gap-8 justify-start ;
+  @apply flex flex-col flex-nowrap gap-8 justify-start;
 }
 .card {
+  @apply w-full h-48 p-5 relative rounded-2xl border-2 border-tertiary;
+  /* 
+  -webkit-transition: 0.5s ease-out;
+  transition: 0.5s ease-out;
+  overflow: visible; */
+}
+/* .card {
   width: 254px;
   height: 190px;
   border-radius: 20px;
-  /* background: #f1f5f9; */
+  background: #f1f5f9;
   position: relative;
   padding: 1.2rem;
   border: 2px solid #f1f5f9;
   -webkit-transition: 0.5s ease-out;
   transition: 0.5s ease-out;
   overflow: visible;
-}
+} */
 .card-details {
   /* color: rgb(162, 0, 255); */
   height: 100%;
@@ -95,7 +103,7 @@ button:hover {
   background-color: #c4b5fd;
   color: #fff;
   font-size: 1rem;
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   position: absolute;
   left: 50%;
   bottom: 0;
